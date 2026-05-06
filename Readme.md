@@ -1,6 +1,6 @@
 # Techcareer Java Core Eğitimi - 2025
 
-> **Not:** Bu proje ve eğitim içerikleri **Techcareer** eğitimlerinden alınmış ve geliştirilmiştir. 🎓
+> **Not:** Bu proje ve eğitim içerikleri **Techcareer** eğitimlerinden alınmış ve geliştirilmiştir.
 >
 > *Bu depo; 2025 yılında tamamlanan eğitim çalışmalarının 2026 yılında modernize edilerek, detaylı dökümante edilmiş ve kod kalitesi artırılmış (refactored) güncel sürümüdür.*
 
