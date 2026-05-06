@@ -1,0 +1,4 @@
+package com.yasin.tutorials.othercourse._07_week_Project;
+
+public class _SoftwarePrensible {
+}

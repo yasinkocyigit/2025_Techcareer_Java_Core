@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yasin</groupId>
+    <artifactId>2025_Techcareer_Java_Core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--Information-->
+    <url>https://github.com/yasinkocyigit</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>yasinkocyigit</id>
+            <name>Yasin Koçyiğit</name>
+            <email>yasnkcygt@gmail.com</email>
+            <organization>Bireysel Geliştirici</organization>
+            <organizationUrl>https://github.com/yasinkocyigit</organizationUrl>
+        </developer>
+    </developers>
+
+    <!--Version Control-->
+    <scm>
+        <connection>scm:git:https://github.com/yasinkocyigit/2025_Techcareer_Java_Core.git</connection>
+        <developerConnection>scm:git:ssh://github.com/yasinkocyigit/2025_Techcareer_Java_Core.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/yasinkocyigit/2025_Techcareer_Java_Core.git</url>
+    </scm>
+
+    <packaging>jar</packaging>
+
+    <!-- start properties-->
+    <properties>
+        <encoding>UTF-8</encoding>
+        <java.version>21</java.version>
+
+        <!--for maven-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!--Maven Compiler-->
+        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+    <!-- end properties-->
+
+    <!-- start dependencies-->
+    <dependencies>
+
+        <!--validation-->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.2.Final</version>
+        </dependency>
+
+        <!-- JMH (Java Microbenchmark Harness) -->
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.37</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>1.37</version>
+        </dependency>
+
+        <!-- Jackson (JSON ile loglama yapmak istersen) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.2</version>
+        </dependency>
+
+        <!-- Java Cryptography Extension (JCE) İçin Gerekli -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!-- Java'da Şifreleme (AES) İçin Apache Commons Codec -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- RDBMS MYSQL-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
+
+        <!-- SQLLITE -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.45.1.0</version>
+        </dependency>
+
+    </dependencies>
+    <!-- end dependencies-->
+
+    <!-- start build-->
+    <build>
+        <defaultGoal>spring-boot:run</defaultGoal>
+        <finalName>${project.artifactId}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.openjdk.jmh</groupId>
+                            <artifactId>jmh-generator-annprocess</artifactId>
+                            <version>1.37</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.38</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- end build-->
+
+</project>
