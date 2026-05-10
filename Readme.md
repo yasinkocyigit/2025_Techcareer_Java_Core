@@ -1,8 +1,7 @@
 # Techcareer Java Core Eğitimi - 2025
 
-> **Not:** Bu proje ve eğitim içerikleri **Techcareer** eğitimlerinden alınmış ve geliştirilmiştir.
 >
-> *Bu depo; 2025 yılında tamamlanan eğitim çalışmalarının 2026 yılında modernize edilerek, detaylı dökümante edilmiş ve kod kalitesi artırılmış (refactored) güncel sürümüdür.*
+> *Bu depo; 2025 yılında tamamlanan eğitim çalışmalarının 2026 yılında düzenlenerek, detaylı dökümante edilmiş ve kod kalitesi artırılmıştır.*
 
 Bu depo (repository), Techcareer 2025 Java Core eğitimi boyunca işlenen konuları, örnek kodları, pratik çalışmaları ve geliştirilen kütüphane projesini içermektedir. Proje, temel Java syntax'ından başlayarak İleri Seviye Nesne Yönelimli Programlama (OOP), Koleksiyonlar (Collections), Generics ve Dosya İşlemleri (I/O) gibi modern Java yeteneklerini pratik uygulamalarla barındırır.
 
